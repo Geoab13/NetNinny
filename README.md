@@ -1,3 +1,4 @@
-TDTS04        Software description        2017-02-08
-Geoab694                Linköping University
+::: Software description ::: 2017-02-08
+
 # Net Ninny - A Web Proxy Based Service
+::: ###### George Aboalahad
