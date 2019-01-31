@@ -16,45 +16,59 @@ Following pages were tested:
 1. http://www.ida.liu.se/~TDTS04/labs/2016/NetNinny/default.html
 
 Simple text based site. Works as expected.
+
 2. http://www.ida.liu.se/~TDTS04/labs/2011/ass2/goodtest2.html
 
 HTML with text content. Works as expected.
+
 3. http://www.ida.liu.se/~TDTS04/labs/2011/ass2/SpongeBob.html
 
 HTML with inappropriate word in the url, that is, SpongeBob. Performs a 302 redirect.
+
 4. http://www.ida.liu.se/~TDTS04/labs/2011/ass2/badtest1.html
 
 Text based web page with SpongeBob in the content. Performs a 302 redirect.
+
 5. http://stackoverflow.com/
 
 Gzip-encoded page, passes through the proxy even though any of the inappropriate words are present.
+
 6. http://www.aftonbladet.se/
 
 Gzip-encoded page that passes through the proxy even though any of the inappropriate words are present.
+
 7. https://www.svd.se/
 
 Gzip-encoded page handled as test 5 and 6.
+
 8. http://liu.se/?l=sv
 
 Gzip-encoded page handled in the same fashion as previous tests.
+
 9. https://qz.com/
 
 This page doesn't go through the proxy since only a http-proxy is used. It works.
+
 10. http://www.bbc.com/
 
 Gzip-encoded website. The site works but the forbidden words will not be sought after because the encoding.
+
 11. http://www.google.com
 
-The page is working, but forbidden words are not being filtered. This is because the site is encoded (gzip) and therefore not searched
+The page is working, but forbidden words are not being filtered. This is because the site is encoded (gzip) and therefore not searched.
+
 12. http://www.youtube.com
 
 This page doesn't go through the proxy since only https is used? It works.
+
 13. https://vimeo.com/player
 
 This page doesn't go through the proxy since only https is used? It works.
+
 14. http://www.dailymotion.com/
 
 Gzip-encoded website. The site worked partly, but always showed page not found. This was corrected by changing the header by taking away the host name from the url and leaving only the path to the object requested.
+
 15. https://www.wikipedia.org/
 
 Gzip-encoded website. The site works but the forbidden words will not be sought after because the encoding.
